@@ -1,0 +1,5 @@
+{
+  "deno.enablePaths": ["backend", "shared"],
+  "deno.disablePaths": ["frontend"],
+  "deno.importMap": "./backend/deno.json"
+}

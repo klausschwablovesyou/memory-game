@@ -1,0 +1,86 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.field {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.fieldLabel {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: var(--color-text);
+}
+
+.fieldInput {
+  width: 50px;
+  height: 41px;
+  padding: 0;
+  border: 1px solid var(--color-divider);
+  border-radius: var(--radius-input);
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--color-text);
+  text-align: center;
+  background-color: var(--color-bg);
+  appearance: textfield;
+  -moz-appearance: textfield;
+}
+
+.fieldInput::-webkit-outer-spin-button,
+.fieldInput::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.fieldInput:focus {
+  border-color: var(--color-primary);
+}
+
+.fieldInputWide {
+  width: 160px;
+  height: 41px;
+  padding: 0 10px;
+  border: 1px solid var(--color-divider);
+  border-radius: var(--radius-input);
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--color-text);
+  background-color: var(--color-bg);
+}
+
+.fieldInputWide:focus {
+  border-color: var(--color-primary);
+}
+
+.error {
+  color: var(--color-primary);
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.button {
+  margin-top: 8px;
+  padding: 12px;
+  background-color: var(--color-primary);
+  color: white;
+  font-size: 1rem;
+  font-weight: 700;
+  border-radius: var(--radius-button);
+  transition: background-color 0.15s;
+}
+
+.button:hover:not(:disabled) {
+  background-color: var(--color-primary-hover);
+}
+
+.button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}

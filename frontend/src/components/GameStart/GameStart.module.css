@@ -1,0 +1,17 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100%;
+  gap: 40px;
+}
+
+.container {
+  background-color: var(--color-bg);
+  border-radius: 24px;
+  width: 100%;
+  max-width: 360px;
+  padding: 20px;
+  box-shadow: var(--shadow-container);
+}

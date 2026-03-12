@@ -1,0 +1,41 @@
+.logo {
+  background-color: var(--color-board);
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.small {
+  padding: 12px 24px;
+}
+
+.large {
+  width: 215px;
+  height: 119px;
+}
+
+.logoText {
+  font-weight: 900;
+  line-height: 1.2;
+  color: var(--color-text);
+  text-align: center;
+}
+
+.small .logoText {
+  font-size: 1.4rem;
+}
+
+.large .logoText {
+  font-size: 2rem;
+}
+
+.logoDotRed {
+  color: #ff3f56;
+  font-size: 0.75em;
+}
+
+.logoDotGray {
+  color: #d5d5d5;
+  font-size: 0.75em;
+}

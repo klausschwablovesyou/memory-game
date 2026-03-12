@@ -1,0 +1,23 @@
+.board {
+  background-color: var(--color-board);
+  border-radius: var(--radius-board);
+  padding: 32px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: clamp(0px, 1vw, 16px);
+}
+
+@media (max-width: 860px) {
+  .grid {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

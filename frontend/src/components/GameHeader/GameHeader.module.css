@@ -1,0 +1,66 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.timer {
+  font-size: 52px;
+  font-weight: 900;
+  letter-spacing: 0;
+  line-height: 100%;
+  color: var(--color-primary);
+  text-align: right;
+}
+
+.stats {
+  width: 118px;
+  height: 56px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: var(--color-text);
+}
+
+.statItem:first-child {
+  padding-bottom: 11px;
+  border-bottom: 1px solid #d5d5d5;
+  margin-left: -16px;
+  padding-left: 16px;
+}
+
+.dividerVertical {
+  width: 1px;
+  height: 56px;
+  background-color: var(--color-divider);
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.iconButton {
+  background: none;
+  font-size: 24px;
+  color: var(--color-text-muted);
+  padding: 8px;
+  border-radius: 8px;
+  transition: color 0.15s;
+}
+
+.iconButton:hover {
+  color: var(--color-text);
+}

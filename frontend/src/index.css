@@ -1,0 +1,60 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --color-primary: #e8534a;
+  --color-primary-hover: #d44840;
+  --color-bg: #ffffff;
+  --color-board: #f5f5f5;
+  --color-card: #ffffff;
+  --color-card-border: #e0e0e0;
+  --color-card-icon: #c4c4c4;
+  --color-card-matched-bg: #f0fff4;
+  --color-card-matched-border: #86efac;
+  --color-text: #1c1c1c;
+  --color-text-muted: #888888;
+  --color-divider: #e0e0e0;
+  --color-overlay: rgba(0, 0, 0, 0.45);
+
+  --radius-card: 10px;
+  --radius-board: 50px;
+  --radius-button: 12px;
+  --radius-logo: 32px;
+  --radius-input: 10px;
+
+  --shadow-card: 0px 2px 1px 0px #00000026;
+  --shadow-container: 0px 2px 1px 0px #00000026, 0px 0px 1px 0px #00000026;
+  --shadow-modal: 0 8px 32px rgba(0, 0, 0, 0.16);
+
+  --font: "Gilroy", system-ui, sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font);
+  -webkit-font-smoothing: antialiased;
+}
+
+#root {
+  height: 100%;
+}
+
+button {
+  font-family: var(--font);
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+input {
+  font-family: var(--font);
+  outline: none;
+}

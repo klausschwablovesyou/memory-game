@@ -1,0 +1,20 @@
+{
+  "name": "@memo/monorepo",
+  "version": "1.0.0",
+  "exports": "./backend/main.ts",
+  "tasks": {
+    "install": "deno task install:backend && deno task install:frontend",
+    "install:backend": "cd backend && deno cache main.ts",
+    "install:frontend": "cd frontend && npm install",
+    "dev": "deno task dev:backend & deno task dev:frontend",
+    "dev:backend": "cd backend && deno task dev",
+    "dev:frontend": "cd frontend && npm run dev",
+    "build": "deno task build:frontend && deno task build:backend",
+    "build:backend": "cd backend && deno cache main.ts",
+    "build:frontend": "cd frontend && npm run build",
+    "start": "cd backend && deno task start",
+    "test": "deno task test:backend && deno task test:frontend",
+    "test:backend": "cd backend && deno task test",
+    "test:frontend": "cd frontend && npm test"
+  }
+}
