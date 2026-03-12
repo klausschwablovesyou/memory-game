@@ -161,11 +161,10 @@ The game board uses CSS Grid with `clamp()` for dynamic gap sizing and media que
 
 ### Potential Improvements
 
-- **Database persistence** (e.g., Deno KV or SQLite) for game history and leaderboards.
+- **Database persistence** (e.g., Deno KV or PostgreSQL) for game history and leaderboards.
 - **Multiplayer support** where two players race on the same board via WebSocket.
 - **Difficulty modes** that vary grid size, timer, and max bad guesses as predefined presets.
 - **Animations and sound effects** to make card flips and matches more engaging.
-- **Accessibility** improvements: ARIA labels for cards, keyboard navigation, screen reader announcements for matches.
 - **Rate limiting** on the flip endpoint to prevent brute-force solving.
 - **E2E tests** with a browser automation tool (e.g., Playwright) to cover the full user flow.
 - **Multilingual support** (i18n) using a library like `react-i18next` to translate UI strings and serve multiple locales.
